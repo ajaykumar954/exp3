@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 style="text-align:center;">User Registration</h2>
+  <form id="registrationForm">
+    <label>First Name: <input type="text" id="firstName" required></label>
+    <label>Last Name: <input type="text" id="lastName" required></label>
+    <label>Father's Name: <input type="text" id="fatherName" required></label>
+    <label>Mother's Name: <input type="text" id="motherName" required></label>
+    <label>Date of Birth: <input type="date" id="dob" required></label>
+    <label>Address: <textarea id="address" required></textarea></label>
+    <label>Education Details: <input type="text" id="education" required></label>
+    <label>Phone Number: <input type="tel" id="phone" required></label>
+    <label>Email: <input type="email" id="email" required></label>
+    <label>Gender:
+      <select id="gender" required>
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
