@@ -1,27 +1,77 @@
+/* General Page Styling */
 body {
-  font-family: sans-serif;
-  padding: 10px;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  margin: 0;
+  padding: 0;
 }
 
+/* Form Container */
 form {
   max-width: 500px;
-  margin: auto;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Headings */
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Labels and Inputs */
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
 }
 
 input, textarea, select {
   width: 100%;
-  margin-top: 2px;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+/* Buttons */
+.buttons {
+  text-align: center;
+  margin-top: 20px;
 }
 
 button {
-  margin-top: 10px;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.buttons {
-  text-align: center;
+button:hover {
+  background: #45a049;
+}
+
+button[type="reset"] {
+  background: #f44336;
+}
+
+button[type="reset"]:hover {
+  background: #d32f2f;
 }
